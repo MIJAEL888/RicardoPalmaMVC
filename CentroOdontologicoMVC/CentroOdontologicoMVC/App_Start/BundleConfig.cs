@@ -20,11 +20,21 @@ namespace CentroOdontologicoMVC
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                        "~/Scripts/moment.js",
+                      "~/Scripts/transition.js",
+                      "~/Scripts/collapse.js",
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      //"~/Scripts/bootstrap-modal.js",
+                      "~/Scripts/bootstrap-datetimepicker.min.js",
+                      "~/Scripts/respond.js",
+                      "~/scripts/toastr.js",
+                      "~/Scripts/jquery.validate*",
+                      "~/scripts/general.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap_paper.css",
+                      "~/Content/bootstrap-datetimepicker.min.css",
+                       "~/content/toastr.css",
                       "~/Content/site.css"));
         }
     }
